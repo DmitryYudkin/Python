@@ -1,0 +1,5 @@
+n = input('Insert Your number')
+nn = str(n + n)
+nnn = str(n + n + n)
+x = int(n) + int(nn) + int(nnn)
+print(f'{n}+{nn}+{nnn} = {x}')

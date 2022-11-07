@@ -1,4 +1,7 @@
-List = list(input('Введите значения: ').split())
-for i in range(1, len(List), 2):
-    List[i-1], List[i] = List[i], List[i-1]
-print(List)
+List = []
+list = [int(i) for i in input("Введите список чисел: ").split()]
+for i in range(1, len(list)):
+    if list[i] > list[i-1]:
+        (List.append(list[i]))
+print("Заданный список: ", list)
+print("Список, где элементы больше предыдущего: ", List)

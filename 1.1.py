@@ -1,3 +1,7 @@
-List = [ True, "Hi", 15.5, 44, [50, "frgrf"], {10:50}]
-for i in List:
-    print(f"{i} имеет тип данных: {type(i)}")
+def Plata():
+    x = float(input('Введите выработку в часах: '))
+    y = float(input('Введите ставку в час: '))
+    c = float(input('Введите размер премии- '))
+    pay = (x * y)
+    return pay + c
+print(f'Заработная плата составила: {Plata() }')

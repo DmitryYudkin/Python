@@ -1,8 +1,4 @@
-List = [7, 5, 3, 3, 2]
-Number = int(input('Введите целое число:'))   # 3
-i = 0
-for m in List:
-    if Number <= m:
-        i += 1
-List.insert(i, Number)
-print (f"Новый рейтинг - {List}")
+from functools import reduce
+List = [i for i in range(100, 1001, 2)]
+print("Список чётных чисел [100..1000]:\n", List)
+print("Произведение всех элементов списка:\n", reduce(lambda x,y: x*y, List))
